@@ -15,7 +15,6 @@ public class WheelMove : MonoBehaviour
         _motor = _wheel.motor;
     }
 
-    // Update is called once per frame
     private void Update()
     {
         float hForce = Input.GetAxis("Horizontal");
