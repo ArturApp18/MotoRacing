@@ -8,7 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@7.0.6/Editor/SkinningModule/Triangulation/TriangulationUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@7.0.6/Editor/SkinningModule/Triangulation/TriangulationUtility.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,6 +72,7 @@
       <workItem from="1670941443622" duration="1237000" />
       <workItem from="1670942741125" duration="428000" />
       <workItem from="1670943289645" duration="1190000" />
+      <workItem from="1671125745229" duration="2409000" />
     </task>
     <servers />
   </component>
