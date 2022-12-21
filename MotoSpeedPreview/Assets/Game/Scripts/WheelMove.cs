@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Game.Scripts
@@ -5,23 +6,32 @@ namespace Game.Scripts
     public class WheelMove : MonoBehaviour
     {
         [SerializeField] private float speed;
-    
+        
         private WheelJoint2D _wheel;
         private JointMotor2D _motor;
 
+        public bool movingRight;
+        
         private void Start()
         {
             _wheel = GetComponentInParent<WheelJoint2D>();
             _motor = _wheel.motor;
         }
-        
-        private void Update()
+
+        private void FixedUpdate()
         {
-            float hForce = Input.GetAxis("Horizontal");
+            if (movingRight && Input.GetMouseButton(0))
+            {
+                _motor.motorSpeed = speed * -1;
 
-            _motor.motorSpeed = speed * hForce;
+                _wheel.motor = _motor;
+            }
+            else if (!movingRight && Input.GetMouseButton(0))
+            {
+                _motor.motorSpeed = speed * 1;
 
-            _wheel.motor = _motor;
+                _wheel.motor = _motor;
+            }
         }
     }
 }
